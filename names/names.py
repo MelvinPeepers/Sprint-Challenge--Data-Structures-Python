@@ -35,10 +35,9 @@ tree_traversal = BinarySearchTree("new_list")
 for name in names_1:
     tree_traversal.insert(name)
 
-    for name2 in names_2:
-        if tree_traversal.contains(name2):
-            duplicates.append(name2)
-
+for name2 in names_2:
+    if tree_traversal.contains(name2):
+        duplicates.append(name2)
 
 end_time = time.time()
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
